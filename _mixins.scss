@@ -5,3 +5,10 @@
     justify-content: $justify;
     align-items: $align;
 }
+@mixin btn($bg: $white, $text: $primary) {
+    display: inline-block;
+    padding: 14px 54px;
+    background: $bg;
+    border-radius: 10px;
+    color: $text;
+}

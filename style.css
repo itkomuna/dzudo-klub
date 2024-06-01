@@ -15,6 +15,10 @@ a {
   transition: 0.3s ease-in-out;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   max-width: 1140px;
   width: 100%;
@@ -26,10 +30,50 @@ a {
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 54px;
+  background: white;
+  border-radius: 10px;
+  color: #051B2A;
+}
+
+.btn-white:hover {
+  background: #AA191E;
+  color: white;
+}
+
+.hamburger {
+  color: white;
+  font-size: 25px;
+  display: none;
+}
+.hamburger:hover {
+  color: #AA191E;
+}
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+}
+
 .topBar {
   background: #051B2A;
   padding: 18px 0;
   color: white;
+}
+@media (max-width: 767px) {
+  .topBar {
+    display: none;
+  }
 }
 .topBar .container {
   display: flex;
@@ -59,4 +103,69 @@ a {
 .topBar .container .address i {
   color: #AA191E;
   margin-right: 15px;
+}
+
+.mainHeader {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 300px;
+}
+@media (max-width: 767px) {
+  .mainHeader {
+    padding-bottom: 150px;
+  }
+}
+.mainHeader nav {
+  padding: 25px 0 200px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .mainHeader nav {
+    padding: 25px 0 100px 0;
+  }
+}
+.mainHeader nav .logo img {
+  width: 130px;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .mainHeader nav .logo img {
+    width: 90px;
+  }
+}
+.mainHeader nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHeader nav ul .nav-link {
+  color: white;
+  margin-left: 50px;
+}
+.mainHeader nav ul .nav-link:hover {
+  color: #AA191E;
+}
+@media (max-width: 767px) {
+  .mainHeader nav ul .nav-link {
+    display: none;
+  }
+}
+.mainHeader div h1 {
+  font-size: 72px;
+  font-weight: 400;
+}
+.mainHeader div p {
+  padding: 60px 0;
+}
+@media (max-width: 767px) {
+  .mainHeader div p {
+    padding: 30px 0;
+  }
 }/*# sourceMappingURL=style.css.map */
