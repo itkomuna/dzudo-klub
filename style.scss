@@ -1,4 +1,39 @@
+@import 'vars';
+@import 'mixins';
+@import 'globals';
 
-body {
-    background: pink;
+// .topBar 
+.topBar {
+    background: $primary;
+    padding: 18px 0;
+    color: $white;
+    .container {
+        @include flex;
+        .contact {
+            color: $white;
+            i {
+                margin-right: 15px;
+                color: $accents;
+            }   
+            &:hover {
+                color: $accents;
+            }
+        }
+        .icons {
+            i {
+                margin-right: 15px;
+                color: $accents;
+                transition: $transition;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+        .address {
+            i {
+                color: $accents;
+                margin-right: 15px;;
+            }
+        }
+    }
 }
