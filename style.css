@@ -85,6 +85,15 @@ h2 {
   color: white;
 }
 
+.btn-red {
+  background: #AA191E;
+  color: white;
+}
+.btn-red:hover {
+  background: #0B3C5C;
+  color: white;
+}
+
 .hamburger {
   color: white;
   font-size: 25px;
@@ -274,10 +283,20 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .treneri div {
+    flex-direction: column;
+  }
+}
 .treneri div article {
   flex: 0 0 29%;
   box-shadow: 0px 3px 6px lightgray;
   border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .treneri div article:nth-child(2) {
+    margin: 30px 0;
+  }
 }
 .treneri div article img {
   border-radius: 10px 10px 0 0;
@@ -290,4 +309,15 @@ h2 {
   color: #0B3C5C;
   text-align: center;
   margin: 0 auto 37px auto;
+}
+
+.cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+.cta p {
+  padding: 60px 0;
 }/*# sourceMappingURL=style.css.map */

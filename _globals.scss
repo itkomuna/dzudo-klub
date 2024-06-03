@@ -64,6 +64,14 @@ h2 {
         color: $white;
     }
 }
+.btn-red {
+    background: $accents;
+    color: $white;
+    &:hover {
+        background: $secondary;
+        color: $white;
+    }
+}
 .hamburger {
     color: $white;
     font-size: 25px;

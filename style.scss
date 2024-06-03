@@ -174,10 +174,18 @@
 	}
 	div {
 		@include flex;
+		@media(max-width: 767px) {
+			flex-direction: column;
+		}
 		article {
 			flex: 0 0 29%;
 			box-shadow: 0px 3px 6px lightgray;
 			border-radius: 10px;
+			@media(max-width: 767px) {
+				&:nth-child(2) {
+					margin: 30px 0;
+				}
+			}
 			img {
 				border-radius: 10px 10px 0 0;
 			}
@@ -191,5 +199,17 @@
 				}
 			}
 		}
+	}
+}
+
+// .cta
+.cta {
+	background: linear-gradient(rgba($black, .5), rgba($black, .5)), url(img/hero.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: $white;
+	p {
+		padding: 60px 0;
 	}
 }
