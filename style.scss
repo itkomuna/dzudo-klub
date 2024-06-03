@@ -12,7 +12,7 @@
 		display: none;
 	}
 
-	.container {
+	.container.list {
 		@include flex;
 
 		.contact {
@@ -316,4 +316,77 @@
 			}
 		}
 	}
+}
+
+// footer
+footer {
+	background: $primary;
+	color: $white;
+	h2 {
+		margin-bottom: 80px;
+	}
+	.row {
+		@include flex;
+		.logo {
+			flex: 0 0 30%;
+			@media(max-width: 767px) {
+				flex: 0 0 100%;
+			}
+			img {
+				width: 130px;
+				margin-bottom: 25px;
+			}
+			p {
+				text-align: left;
+			}
+		}
+		.icons {
+			flex: 0 0 30%;
+			@media(max-width: 767px) {
+				flex: 0 0 100%;
+				margin: 60px 0;
+			}
+			div {
+				margin-bottom: 25px;
+				a {
+					color: $white;
+				}
+				i {
+					color: $accents;
+					margin-right: 30px;
+				}
+			}
+		}
+		.form {
+			flex: 0 0 30%;
+			@media(max-width: 767px) {
+				flex: 0 0 100%;
+			}
+			p {
+				margin-bottom: 50px;
+			}
+			input, textarea {
+				width: 100%;
+				padding: 10px;
+				border-radius: 10px;
+				border: none;
+				margin-bottom: 20px;
+			}
+			.btn {
+				margin-top: 50px;
+				border: none;
+				cursor: pointer;
+				transition: $transition;
+				font-size: 1rem;
+				letter-spacing: 1px;
+			}
+		}
+	}
+}
+
+// line
+.line {
+	padding: 20px 0;
+	margin-top: 50px;
+	border-top: 1px solid #707070;
 }

@@ -118,32 +118,32 @@ h2 {
     display: none;
   }
 }
-.topBar .container {
+.topBar .container.list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.topBar .container .contact {
+.topBar .container.list .contact {
   color: white;
 }
-.topBar .container .contact i {
+.topBar .container.list .contact i {
   margin-right: 15px;
   color: #AA191E;
 }
-.topBar .container .contact:hover {
+.topBar .container.list .contact:hover {
   color: #AA191E;
 }
-.topBar .container .icons i {
+.topBar .container.list .icons i {
   margin-right: 15px;
   color: #AA191E;
   transition: 0.3s ease-in-out;
 }
-.topBar .container .icons i:hover {
+.topBar .container.list .icons i:hover {
   color: white;
 }
-.topBar .container .address i {
+.topBar .container.list .address i {
   color: #AA191E;
   margin-right: 15px;
 }
@@ -427,4 +427,85 @@ h2 {
 .partneri .images div img {
   width: 130px;
   height: auto;
+}
+
+footer {
+  background: #051B2A;
+  color: white;
+}
+footer h2 {
+  margin-bottom: 80px;
+}
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .row .logo {
+  flex: 0 0 30%;
+}
+@media (max-width: 767px) {
+  footer .row .logo {
+    flex: 0 0 100%;
+  }
+}
+footer .row .logo img {
+  width: 130px;
+  margin-bottom: 25px;
+}
+footer .row .logo p {
+  text-align: left;
+}
+footer .row .icons {
+  flex: 0 0 30%;
+}
+@media (max-width: 767px) {
+  footer .row .icons {
+    flex: 0 0 100%;
+    margin: 60px 0;
+  }
+}
+footer .row .icons div {
+  margin-bottom: 25px;
+}
+footer .row .icons div a {
+  color: white;
+}
+footer .row .icons div i {
+  color: #AA191E;
+  margin-right: 30px;
+}
+footer .row .form {
+  flex: 0 0 30%;
+}
+@media (max-width: 767px) {
+  footer .row .form {
+    flex: 0 0 100%;
+  }
+}
+footer .row .form p {
+  margin-bottom: 50px;
+}
+footer .row .form input, footer .row .form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+footer .row .form .btn {
+  margin-top: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.line {
+  padding: 20px 0;
+  margin-top: 50px;
+  border-top: 1px solid #707070;
 }/*# sourceMappingURL=style.css.map */
